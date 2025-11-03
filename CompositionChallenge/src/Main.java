@@ -6,13 +6,14 @@ public class Main {
 
 //        kitchen.getDishWasher().setHasWorkToDo(true);
 //        kitchen.getIceBox().setHasWorkToDo(true);
-//        kitchen.getBrewMaster().setHasWorkToDo(true);
+        kitchen.addWater();
+        kitchen.loadDishwasher();
 //
 //        kitchen.getDishWasher().doDishes();
 //        kitchen.getIceBox().orderFood();
 //        kitchen.getBrewMaster().brewCoffee();
 
-        kitchen.setKitchenState(true, false, true);
+//        kitchen.setKitchenState(true, false, true);
         kitchen.doKitchenWork();
     }
 }
