@@ -22,6 +22,16 @@ public class SmartKitchen {
         return dishWasher;
     }
 
+    public void addWater(){
+        getBrewMaster().setHasWorkToDo(true);
+    }
+    public void pourMilk(){
+        getIceBox().setHasWorkToDo(true);
+    }
+    public void loadDishwasher(){
+        getDishWasher().setHasWorkToDo(true);
+    }
+
     public void setKitchenState(boolean coffeeFlag, boolean fridgeFlag,
                                 boolean dishWasherFlag) {
 
