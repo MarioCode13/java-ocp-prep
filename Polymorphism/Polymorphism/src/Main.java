@@ -29,5 +29,8 @@ public class Main {
 
         }
 
+        Adventure jaws = (Adventure) Movie.getMovie("A", "Jaws");
+        jaws.watchMovie();
+
     }
 }
