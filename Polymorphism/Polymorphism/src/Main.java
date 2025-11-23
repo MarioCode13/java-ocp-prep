@@ -32,5 +32,14 @@ public class Main {
         Adventure jaws = (Adventure) Movie.getMovie("A", "Jaws");
         jaws.watchMovie();
 
+        Object comedy = Movie.getMovie("Comedy", "asdf");
+        Comedy comedyMovie = (Comedy) comedy;
+        comedyMovie.watchMovie();
+
+        var airplane = Movie.getMovie("S", "Airplane");
+        airplane.watchMovie();
+
+        var plane = new Comedy("Airplane");
+        plane.watchMovie();
     }
 }
