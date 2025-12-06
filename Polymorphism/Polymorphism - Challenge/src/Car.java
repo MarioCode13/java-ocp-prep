@@ -27,6 +27,22 @@ class GasCar extends Car {
     public GasCar(String description, double avgKmPerLitre) {
         super(description);
     }
+
+    public GasCar(String description, double avgKmPerLitre, int cylinders) {
+        super(description);
+        this.avgKmPerLitre = avgKmPerLitre;
+        this.cylinders = cylinders;
+    }
+
+    @Override
+    public void startEngine() {
+        System.out.printf("GasCar -> %d cylinders fired up and ready %n", cylinders);
+    }
+
+    @Override
+    protected void runEngine() {
+        System.out.printf("GasCar -> usage at %.2f km/l %n", avgKmPerLitre);
+    }
 }
 
 class ElectricCar extends Car {
