@@ -8,7 +8,7 @@ public class Burger extends Item {
 
     @Override
     public String getName() {
-        return super.getName() + " Burger";
+        return super.getName() + " BURGER";
     }
 
     @Override

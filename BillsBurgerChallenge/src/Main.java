@@ -11,8 +11,13 @@ public class Main {
 //        avocado.printItem();
 
 
-        Burger burger = new Burger("regular", 4.00);
-        burger.addTopping("CHEESE", "BACON", "BBQ sauce");
-        burger.printItem();
+//        Burger burger = new Burger("regular", 4.00);
+//        burger.addTopping("CHEESE", "BACON", "BBQ sauce");
+//        burger.printItem();
+
+        MealOrder meal = new MealOrder();
+        meal.addBurgerToppings("CHEESE", "BACON", "BBQ Sauce");
+        meal.setDrinkSize("LARGE");
+        meal.printItemisedList();
     }
 }
