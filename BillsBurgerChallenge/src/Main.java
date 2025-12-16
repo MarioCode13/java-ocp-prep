@@ -15,9 +15,13 @@ public class Main {
 //        burger.addTopping("CHEESE", "BACON", "BBQ sauce");
 //        burger.printItem();
 
-        MealOrder meal = new MealOrder();
-        meal.addBurgerToppings("CHEESE", "BACON", "BBQ Sauce");
-        meal.setDrinkSize("LARGE");
-        meal.printItemisedList();
+//        MealOrder meal = new MealOrder();
+//        meal.addBurgerToppings("CHEESE", "BACON", "BBQ Sauce");
+//        meal.setDrinkSize("LARGE");
+//        meal.printItemisedList();
+
+        MealOrder deluxeMeal = new MealOrder("deluxe", "coke", "chili");
+        deluxeMeal.addBurgerToppings("AVO", "CHEESE", "BACON", "LETTUCE", "MAYO");
+        deluxeMeal.printItemisedList();
     }
 }
