@@ -20,9 +20,17 @@ public class Main {
         System.out.println("last = " + firstTen[arrayLength - 1]);
 
         int[] newArray;
-        newArray = new int[] {5, 4, 3, 2, 1};
+        newArray = new int[5];
+//        newArray = new int[] {5, 4, 3, 2, 1};
         for (int i = 0; i < newArray.length; i++) {
-            System.out.print(newArray[i] + " ");
+            newArray[i] = newArray.length - i;
+        }
+//        for (int i = 0; i < newArray.length; i++) {
+//            System.out.print(newArray[i] + " ");
+//        }
+
+        for (int element : newArray) {
+            System.out.print(element + " ");
         }
     }
 }
